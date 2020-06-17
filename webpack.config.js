@@ -25,7 +25,9 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: 'My Excel',
-      filename: path.resolve(__dirname, 'dist/index.html')
+      filename: path.resolve(__dirname, 'dist/index.html'),
+      template: path.resolve(__dirname, 'src/index.html'),
+      favicon: path.resolve(__dirname, 'src/favicon.ico')
     }),
     new copyWebpackPlugin({patterns: [
       {from: './favicon.ico', to: './favicon.ico'}

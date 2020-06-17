@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My Excel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  </head>
+  <body>
+
+  <div id="app" class="container">
+    <div class="excel">
+      <div class="excel__header">
+        <input type="text" class="input" value="Новая таблица">
+
+        <div class="">
+          <div class="button"><i class="material-icons">delete</i></div>
+          <div class="button"><i class="material-icons">exit_to_app</i></div>
+        </div>
+      </div>
+
+      <div class="excel__toolbar">
+        <div class="button"><i class="material-icons">format_align_left</i></div>
+        <div class="button"><i class="material-icons">format_align_center</i></div>
+        <div class="button"><i class="material-icons">format_align_right</i></div>
+        <div class="button"><i class="material-icons">format_bold</i></div>
+        <div class="button"><i class="material-icons">format_italic</i></div>
+        <div class="button"><i class="material-icons">format_underline</i></div>
+      </div>
+
+      <div class="excel__formula">
+        <div class="info">fx</div>
+        <div class="input" contenteditable spellcheck="false"></div>
+      </div>
+
+      <div class="excel__table">
+        <div class="row">
+          <div class="row-info">
+
+          </div>
+          <div class="row-data">
+            <div class="column">
+              A
+            </div>
+            <div class="column">
+              B
+            </div>
+            <div class="column">
+              C
+            </div>
+            <div class="column">
+              A
+            </div>
+            <div class="column">
+              B
+            </div>
+            <div class="column">
+              C
+            </div>
+          </div>
+        </div> 
+
+        <div class="row">
+          <div class="row-info">
+            1
+          </div>
+          <div class="row-data">
+            <div class="cell selected" contenteditable>active</div>
+            <div class="cell" contenteditable>one </div>
+            <div class="cell" contenteditable>two </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="row-info">
+            1
+          </div>
+          <div class="row-data">
+            <div class="cell">active</div>
+            <div class="cell">one </div>
+            <div class="cell">two </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../dist/bundle.js"></script></body>
+</html>
