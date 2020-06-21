@@ -10,7 +10,16 @@
         "comma-dangle": "off",
         "arrow-parens": "off",
         "require-jsdoc": "off",
-        "new-cap": "off"        
+        "new-cap": "off",
+        "max-len": "off",
+        "operator-linebreak": "off",
+
+        //delete after
+        "no-trailing-spaces": "off",
+        "eol-last": "off",
+        "indent": "off",
+        "space-before-function-paren": "off",
+        
     },
     "extends": ["eslint:recommended", "google"]
 }
