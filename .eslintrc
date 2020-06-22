@@ -13,6 +13,7 @@
         "new-cap": "off",
         "max-len": "off",
         "operator-linebreak": "off",
+        "no-unused-vars": "off",
 
         //delete after
         "no-trailing-spaces": "off",
