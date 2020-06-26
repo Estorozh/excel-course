@@ -19,8 +19,7 @@
         "no-trailing-spaces": "off",
         "eol-last": "off",
         "indent": "off",
-        "space-before-function-paren": "off",
-        
+        "space-before-function-paren": "off"        
     },
     "extends": ["eslint:recommended", "google"]
 }
