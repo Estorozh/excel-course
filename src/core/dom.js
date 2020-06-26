@@ -15,7 +15,7 @@ class DOM {
     }
 
     text(text) {
-        if (typeof text == 'string') {
+        if (typeof text != 'undefined') {
             this.$el.textContent = text
             return this
         }
@@ -52,6 +52,13 @@ class DOM {
 
     get data() {
         return this.$el.dataset
+    }
+
+    getStyles(styles = []) {
+        return styles.reduce((result, s) => {
+            result[s] = this.$el.style[s]
+            return result
+        }, {})
     }
 
     find(selector) {
@@ -92,6 +99,14 @@ class DOM {
     focus() {
         this.$el.focus()
         return this
+    }
+
+    attr(name, value) {
+        if (value) {
+            this.$el.setAttribute(name, value)
+            return this
+        }
+        return this.$el.getAttribute(name)
     }
 }
 
