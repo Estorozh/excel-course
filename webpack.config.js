@@ -6,7 +6,6 @@ const {CleanWebpackPlugin} = require('clean-webpack-plugin')
 // const loader = require('sass-loader')
 
 
-
 module.exports = {
   context: path.resolve(__dirname, 'src'),
   mode: 'development',
